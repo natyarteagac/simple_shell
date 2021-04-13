@@ -2,16 +2,16 @@
 
 Name
 	.sh - comand interpreter (simple shell)
-	Simple Shell developed in c created to interact with Linux eviroment.
+	Simple shell developed in c created to interact with Linux eviroment.
 
 Synopsis
-	./hsh [command_file] [argument]
+	./sshell [command_file] [argument]
 
 Description
 	Simple shell was created for execute simple commands as the real sh command interpreter.
 
 Return value
-	0 if the execution process is succesfull and -1 if show any error or incompatibility with the
+	0 if the execution process is succesfull or -1 if show any error or incompatibility with the
 	interpreter executor.
 
 Examples
