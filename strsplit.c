@@ -34,6 +34,7 @@ char **super_array(char *buffer, char *deli)
         words2 = strtok(NULL, deli);
         i++;
     }
+
 	contwords[i] = NULL;
 	free(contwords);
 	return (contwords);
