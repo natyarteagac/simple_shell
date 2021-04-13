@@ -1,0 +1,23 @@
+.sh man page "13/04/2021" "simple shell man page"
+
+Name
+	.sh - comand interpreter (simple shell)
+	Simple Shell developed in c created to interact with Linux eviroment.
+
+Synopsis
+	./hsh [command_file] [argument]
+
+Description
+	Simple shell was created for execute simple commands as the real sh command interpreter.
+
+Return value
+	0 if the execution process is succesfull and -1 if show any error or incompatibility with the
+	interpreter executor.
+
+Examples
+	[command_file] [argument]
+	bin/ls -la
+
+AUTHORS
+Luis Colorado - LuisColorado-tech
+Natalia Arteaga - natyarteagac
