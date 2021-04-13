@@ -17,7 +17,7 @@ char **super_array(char *buffer, char *deli)
 	words_dup = strdup(buffer);
 	words = strtok(words_dup, deli);
 
-    while(words)
+	while(words)
 	{
 		words = strtok(NULL, deli);
 		wordscount++;
