@@ -35,7 +35,7 @@ ___
 
 ## Flowchart
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/natyarteagac/simple_shell/blob/luis/flowchart.jpg"/>
  <h3 align="center">Flowchart</h3>
  <br>
  </p>
