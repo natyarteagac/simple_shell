@@ -1,4 +1,5 @@
 #include "header.h"
+
 /**
 * super_array: entry point.
 * @buffer: buffer memory.
@@ -48,6 +49,7 @@ int status(int wordscount, char **contwords)
 	while (wordscount)
 	{
 		struct stat st;
+
     	if (-1 == stat(*contwords, &st))
 			fprintf(stderr, "No se pudo abrir el archivo o directorio '%s'.\n", *contwords);
     	else
