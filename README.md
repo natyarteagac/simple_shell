@@ -52,7 +52,7 @@ ___
 
 <p align="center">
 <h4 align="center">Made by</h4>
-    <h2 align="center">Natalia Arteaga Cedeño & Vanessa Garcia</h2>
+    <h2 align="center">Natalia Arteaga & Luis Colorado</h2>
         </a>
       </p>
 </p>
