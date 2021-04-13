@@ -31,10 +31,10 @@ int main(void)
 		arraytoken = super_array(buffer, " ");
 		i = 0;
 
-		//status1 = status(1, *arraytoken);
-		//execute(arraytoken);
+		/*status1 = status(1, *arraytoken);*/
 
 		execve(arraytoken[0], arraytoken, NULL);
 	}
 	return (0);
 }
+
