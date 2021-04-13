@@ -19,7 +19,7 @@ int main(void)
     
 	write(1, "#cisfun$ ", 9); 
 	 
-	while (userline = getline(&buffer, &buffersize, stdin) != EOF)
+	while (getline(&buffer, &buffersize, stdin) != EOF)
 	{
 		
 		while (buffer[j] != 0)
