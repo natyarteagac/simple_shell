@@ -8,7 +8,6 @@
 int main(void)
 {
 	int j = 0;
-	int userline;
 	char **arraytoken = NULL;
 	char *buffer = NULL;
 	size_t buffersize = 0;
