@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
-*
-*
-*
+* *_strdup - entry point.
+* @src: string to duplicate.
+* Return: new.
 */
 
 char *_strdup(const char *src)
