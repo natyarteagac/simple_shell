@@ -13,6 +13,7 @@
 char **super_array(char *buffer, char *deli);
 int main(void);
 int execute(char **comandos);
+char *_strdup(const char *src);
 
 #endif
 
