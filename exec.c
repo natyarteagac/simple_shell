@@ -8,7 +8,6 @@
 
 int execute(char **comandos)
 {
-	int status;
 	pid_t my_pid;
 
 	my_pid = fork();
@@ -18,7 +17,7 @@ int execute(char **comandos)
 	{
 		if (execve(comandos[0], comandos, NULL) == -1)
 		{
-			perror("Error:");
+			perror("./sshell");
 			exit(98);
 		}
 

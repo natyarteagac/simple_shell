@@ -1,7 +1,7 @@
 #include "header.h"
 
 /**
-* super_array: entry point.
+* super_array - entry point.
 * @buffer: buffer memory.
 * @deli: delimitator.
 * Return: pointer.
@@ -26,6 +26,8 @@ char **super_array(char *buffer, char *deli)
 	}
 	free(words);
 	contwords = malloc(sizeof(char *) * (wordscount + 1));
+	if (contwords == NULL)
+		return (NULL);
 	words_dup2 = _strdup(buffer);
 	words2 = strtok(words_dup2, deli);
 	while (words2 != NULL)
