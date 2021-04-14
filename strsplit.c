@@ -23,7 +23,6 @@ char **super_array(char *buffer, char *deli)
 		words = strtok(NULL, deli);
 		wordscount++;
 	}
-	printf("%d", wordscount);
 	contwords = malloc(sizeof(char *) * (wordscount + 1));
 	words_dup2 = strdup(buffer);
 	words2 = strtok(words_dup2, deli);
@@ -34,7 +33,6 @@ char **super_array(char *buffer, char *deli)
 		i++;
 	}
 	contwords[i] = NULL;
-	printf("%s", *contwords);
 	return (contwords);
 }
 
