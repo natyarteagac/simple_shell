@@ -38,23 +38,3 @@ char **super_array(char *buffer, char *deli)
 	return (contwords);
 }
 
-/**
-* status - entry point.
-* @wordscount: wordscount number.
-* @contwords: file to indicate the status.
-* Return: 0.
-*/
-
-/*int status(int wordscount, char **contwords)
-{
-	while (wordscount)
-	{
-		struct stat st;
-
-		if (-1 == stat(*contwords, &st))
-		fprintf(stderr, "No se pudo abrir'%s'.\n", *contwords);
-		else
-			printf("'%s' es un archivo :).\n", *contwords);
-	}
-	return (0);
-}*/

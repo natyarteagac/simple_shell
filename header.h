@@ -6,7 +6,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/stat.h>
-#include <sys/wait.h>
 
 #define _XOPEN_SOURCE 600
 
