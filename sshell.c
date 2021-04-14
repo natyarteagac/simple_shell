@@ -8,6 +8,7 @@
 int main(void)
 {
 	int j = 0;
+	int i = 0;
 	
 	char **arraytoken = NULL;
 	char *buffer = NULL;
@@ -27,7 +28,7 @@ int main(void)
 			}
 		}
 		arraytoken = super_array(buffer, " ");
-		
+		i = 0;
 
 		/*status1 = status(1, *arraytoken);*/
 
