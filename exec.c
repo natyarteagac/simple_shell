@@ -22,6 +22,6 @@ int execute(char **comandos)
 		}
 
 	}
-		return (1);	
+	return (1);
 }
 
