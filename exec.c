@@ -26,5 +26,6 @@ int execute(char **comandos)
 			wait(&status);
 			write(1, "#cisfun$ ", 9);
 		}
-		return (1);
+	}
+		return (1);	
 }

@@ -23,6 +23,7 @@ char **super_array(char *buffer, char *deli)
 		words = strtok(NULL, deli);
 		wordscount++;
 	}
+	printf("%d", wordscount);
 	contwords = malloc(sizeof(char *) * (wordscount + 1));
 	words_dup2 = strdup(buffer);
 	words2 = strtok(words_dup2, deli);
@@ -33,7 +34,7 @@ char **super_array(char *buffer, char *deli)
 		i++;
 	}
 	contwords[i] = NULL;
-	free(contwords);
+	printf("%s", *contwords);
 	return (contwords);
 }
 
@@ -44,16 +45,16 @@ char **super_array(char *buffer, char *deli)
 * Return: 0.
 */
 
-int status(int wordscount, char **contwords)
+/*int status(int wordscount, char **contwords)
 {
 	while (wordscount)
 	{
 		struct stat st;
 
 		if (-1 == stat(*contwords, &st))
-		/*fprintf(stderr, "No se pudo abrir'%s'.\n", *contwords);*/
+		fprintf(stderr, "No se pudo abrir'%s'.\n", *contwords);
 		else
 			printf("'%s' es un archivo :).\n", *contwords);
 	}
 	return (0);
-}
+}*/

@@ -8,13 +8,11 @@
 int main(void)
 {
 	int j = 0;
-	int i = 0;
-	int status1;
-	int userline;
+	
 	char **arraytoken = NULL;
 	char *buffer = NULL;
 	size_t buffersize = 0;
-	pid_t my_pid;
+	
 
 	write(1, "#cisfun$ ", 9);
 
@@ -29,7 +27,7 @@ int main(void)
 			}
 		}
 		arraytoken = super_array(buffer, " ");
-		i = 0;
+		
 
 		/*status1 = status(1, *arraytoken);*/
 
