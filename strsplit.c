@@ -28,6 +28,7 @@ char **super_array(char *buffer, char *deli)
 	contwords = malloc(sizeof(char *) * (wordscount + 1));
 	if (contwords == NULL)
 		return (NULL);
+
 	words_dup2 = _strdup(buffer);
 	words2 = strtok(words_dup2, deli);
 	while (words2 != NULL)
@@ -39,3 +40,4 @@ char **super_array(char *buffer, char *deli)
 	contwords[i] = NULL;
 	return (contwords);
 }
+

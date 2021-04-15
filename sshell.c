@@ -39,14 +39,13 @@ int main(void)
 * Return: void.
 */
 
-void freetoken(char **free_token)
+void freetoken(char **ar_token)
 {
 	int i = 0;
 
-	while (free_token[i] != NULL)
+	while (ar_token[i] != NULL)
 	{
-		free(free_token[i++]);
-		free(free_token);
+		free(ar_token[i++]);
+		free(ar_token);
 	}
 }
-

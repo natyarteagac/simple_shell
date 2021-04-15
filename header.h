@@ -16,7 +16,7 @@ int execute(char **comandos);
 char *_strdup(const char *src);
 int _strcmp(char *strg1, char *strg2);
 char *gpath(char *name);
-void freetoken(char **free_token);
+void freetoken(char **ar_token);
 
 #endif
 
