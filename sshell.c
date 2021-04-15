@@ -11,13 +11,6 @@ int main(void)
 	char **arraytoken = NULL;
 	char *buffer = NULL;
 	size_t buffersize = 0;
-<<<<<<< HEAD
-
-	write(1, "#cisfun$ ", 9);
-
-	while (getline(&buffer, &buffersize, stdin) != EOF)
-	{
-=======
 	ssize_t readed = 0;
 
 	while (readed != EOF)
@@ -27,7 +20,6 @@ int main(void)
 
 		j = 0;
 
->>>>>>> main
 		while (buffer[j] != 0)
 		{
 			if (buffer[j] == '\n')
@@ -36,31 +28,23 @@ int main(void)
 		}
 	arraytoken = super_array(buffer, " ");
 	execute(arraytoken);
-	}
-<<<<<<< HEAD
-	return (0);
-
-}
-
-=======
 	freetoken(arraytoken);
+	}
 	return (0);
 }
 
 /**
 * freetoken - entry point.
-* @free_token: malloc to free.
+* @ar_token: malloc to free.
 * Return: void.
 */
 
 void freetoken(char **ar_token)
 {
-	int i = 0;
+	int i;
 
-	while (ar_token[i] != NULL)
+	for (i = 0; i != '\0'; i++)
 	{
-		free(ar_token[i++]);
-		free(ar_token);
+		free(ar_token[i]);
 	}
 }
->>>>>>> main
