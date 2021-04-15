@@ -13,6 +13,13 @@
 char **super_array(char *buffer, char *deli);
 int main(void);
 int execute(char **comandos);
+<<<<<<< HEAD
+=======
+char *_strdup(const char *src);
+int _strcmp(char *strg1, char *strg2);
+char *gpath(char *name);
+void freetoken(char **ar_token);
+>>>>>>> main
 
 #endif
 
