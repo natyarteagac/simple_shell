@@ -1,26 +1,34 @@
-.sh man page "13/04/2021" "simple shell man page"
+.SH man page "13/04/2021" "simple shell man page"
 
-Name
-	.sh - comand interpreter (simple shell)
+.SH Name 
+	.sh - command interpreter (simple shell)
 	Simple shell developed in c created to interact with Linux eviroment.
 
-Synopsis
-	./sshell [command_file] [argument]
+.SH Synopsis
+	./shs [command_file] [argument]
 
-Description
+.SH Description
 	Simple shell was created for execute simple commands as the real sh command interpreter.
 
+<<<<<<< HEAD
 Prompt
 	#cisfun$
 
 Return value
+=======
+.SH Return value
+>>>>>>> b5137760d53c66b047880ea0493d5fcd77701b07
 	0 if the execution process is succesfull or -1 if show any error or incompatibility with the
 	interpreter executor.
 
-Examples
+.SH Aditional commands
+	_strcmp.c command to compare two strings.
+	_strdup.c command to duplicate a string.
+
+.SH Examples
 	[command_file] [argument]
 	bin/ls -la
 
-AUTHORS
-Luis Colorado - LuisColorado-tech
-Natalia Arteaga - natyarteagac
+.SH AUTHORS
+Luis Colorado - LuisColorado-tech.
+Natalia Arteaga - natyarteagac.
