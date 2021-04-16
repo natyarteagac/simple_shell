@@ -5,13 +5,13 @@
 
 # SIMPLE_SHELL
 
-Shell is a command interpreter that allows the user to communicate with the kernel through instructions, which in turn allows them to be executed, it also allows access to tools that allow controlling the operation of the computer.
+Shell is a command interpreter who allows the user to communicate with the kernel throught instructions. It allows them to be executed, it also allows the access to tools that allows to control the operation of the computer.
 
 ## Installation
 
-### Requierements
+### Requirements
 
-- Gcc, **version** >= 4.8.4
+- gcc, **version** >= 4.8.4
 - Linux
 
 ### Steps to compile  the shell and execute
@@ -19,18 +19,19 @@ Shell is a command interpreter that allows the user to communicate with the kern
 - gcc -Wall -Werror -Wextra -pedantic *.c -o sshell
 - ./sshell
 - Enter your first command.
-
 ___
 ## Files|Description
 
-##|File
+##|Files
 ---|---
 1|shell.c
 2|strsplit.c
 3|exec.c
 4|header.h
-5|AUTHORS
-6|README.md
+5|_strcmp.c
+6|_strdup.c
+7|AUTHORS
+8|README.md
 ___
 
 ## Flowchart
@@ -55,4 +56,4 @@ ___
     <h2 align="center">Natalia Arteaga & Luis Colorado</h2>
         </a>
       </p>
-</p>
+</pi>
