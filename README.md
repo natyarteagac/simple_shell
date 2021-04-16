@@ -46,7 +46,7 @@ ___
 <p><em>Command</em></p>
 <pre><code>./sshell
 </code></pre>
-<pre><code>bin/ls -la
+<pre><code>/bin/ls -la
 </code></pre>
 <p><em>Output</em></p>
 <pre><code>README.md   exec.c   header.h   shell.c   strsplit.c
