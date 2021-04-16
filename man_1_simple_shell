@@ -1,8 +1,7 @@
-.SH man page "13/04/2021" "simple shell man page"
-
+.TH man 1 "13 of april 2021" "our little shell" 
 .SH Name 
-	.sh - command interpreter (simple shell)
-	Simple shell developed in c created to interact with Linux eviroment.
+.B .sh - command interpreter (simple shell)
+- Simple shell developed in c created to interact with Linux eviroment.
 
 .SH Synopsis
 	./shs [command_file] [argument]
@@ -23,4 +22,4 @@
 	bin/ls -la
 
 .SH AUTHORS
-Luis Colorado - LuisColorado-tech.
+Luis Colorado - LuisColorado-tech, Natalia Arteaga Corrales - natyarteagac
