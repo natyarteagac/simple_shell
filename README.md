@@ -5,7 +5,7 @@
 
 # SIMPLE_SHELL
 
-Shell is a command interpreter who allows the user to communicate with the kernel throught instructions. It allows them to be executed also it permit the access to tools that allows to control the operation of the computer.
+Shell is a command interpreter who allows the user to communicate with the kernel throught instructions. It allows them to be executed also it permits the access to tools that allows to control the operation of the computer.
 
 ## Installation
 
