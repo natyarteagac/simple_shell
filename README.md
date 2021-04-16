@@ -45,7 +45,8 @@ ___
 ## Example
 <p><em>Command</em></p>
 <pre><code>./sshell
-<pre><code> bin/ls -la
+</code></pre>
+<pre><code>bin/ls -la
 </code></pre>
 <p><em>Output</em></p>
 <pre><code>README.md   exec.c   header.h   shell.c   strsplit.c
