@@ -11,7 +11,6 @@ char *getpath(void)
 	
 	int i = 0;
 	char *path_aux = NULL;
-    printf("%s", *environ);
 	while (environ[i] != NULL) /* environ is a GLOBAL var */
 	{
         
@@ -23,7 +22,6 @@ char *getpath(void)
 		}
 		i++;
 	}
-    printf("%s", path_aux);
 	return (path_aux);
 }
 

@@ -10,6 +10,7 @@ int main(void)
 	int j = 0;
 	char **arraytoken = NULL;
 	char *path_aux = NULL;
+	char **arraytokenpath = NULL;
 	char *buffer = NULL;
 	size_t buffersize = 0;
 	ssize_t readed = 0;
@@ -29,10 +30,12 @@ int main(void)
 		}
 	arraytoken = super_array(buffer, " ");
 	path_aux = getpath();
-	printf("%s", path_aux);
+	arraytokenpath = token_path(path_aux);
+	printf("%s", *arraytokenpath);
 	execute(arraytoken);
 	}
 	freetoken(arraytoken);
+	freetoken(arraytokenpath);
 	return (0);
 }
 
