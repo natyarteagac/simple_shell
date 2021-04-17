@@ -18,7 +18,7 @@ int _strncmp(char *string1, char *string2, size_t number)
 
 		if (string1[i] == string2[i])
 		{
-			if (count == (number - 1))
+			if (i == (number - 1))
 				return (0);
 		}
 		aux1 = (int)string1[i];
@@ -30,6 +30,8 @@ int _strncmp(char *string1, char *string2, size_t number)
 			return (-1);
 	}
 	return (0);
+}
+
 
 
 

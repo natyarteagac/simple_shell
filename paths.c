@@ -4,10 +4,11 @@
 *_path
 * Return : 
 */
-extern char **environ;
+
 
 char *getpath(void)
 {
+	
 	int i = 0;
 	char *path_aux = NULL;
     printf("%s", *environ);

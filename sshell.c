@@ -29,7 +29,7 @@ int main(void)
 		}
 	arraytoken = super_array(buffer, " ");
 	path_aux = getpath();
-	
+	printf("%s", path_aux);
 	execute(arraytoken);
 	}
 	freetoken(arraytoken);

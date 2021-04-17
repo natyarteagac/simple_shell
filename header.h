@@ -13,9 +13,10 @@
 /*paths fun*/
 extern char **environ;
 char *getpath(void);
+char **token_path(char *path_aux);
 
 //funciones auxiliares str
-int _strncmp(char *string1, char *string2, size_t number)
+int _strncmp(char *string1, char *string2, size_t number);
 char *_strdup(const char *src);
 
 char **super_array(char *buffer, char *deli);
