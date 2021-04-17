@@ -12,23 +12,32 @@ int main(void)
 	char *buffer = NULL;
 	size_t buffersize = 0;
 	ssize_t readed = 0;
+	int interactive = 1;
 
-	while (readed != EOF)
+	if (isatty(STDIN_FILENO) == 0)
 	{
-		write(STDOUT_FILENO, "#cisfun$ ", 9);
-		readed = getline(&buffer, &buffersize, stdin);
+		interactive = 0;
+	}
 
-		j = 0;
-
-		while (buffer[j] != 0)
+	while (interactive == 1)
+	{
+		while (readed != EOF)
 		{
-			if (buffer[j] == '\n')
-			buffer[j] = 0;
-			j++;
+			write(STDOUT_FILENO, "#cisfun$ ", 9);
+			readed = getline(&buffer, &buffersize, stdin);
+
+			j = 0;
+
+			while (buffer[j] != 0)
+			{	
+				if (buffer[j] == '\n')
+				buffer[j] = 0;
+				j++;
+			}
+		arraytoken = super_array(buffer, " ");
+		execute(arraytoken);
+		freetoken(arraytoken);
 		}
-	arraytoken = super_array(buffer, " ");
-	execute(arraytoken);
-	freetoken(arraytoken);
 	}
 	return (0);
 }

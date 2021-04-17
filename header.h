@@ -1,5 +1,5 @@
-#ifndef HEADER
-#define HEADER
+#ifndef HEADER_H
+#define HEADER_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #define _XOPEN_SOURCE 600
 
+extern char **environ;
 
 char **super_array(char *buffer, char *deli);
 int main(void);
@@ -18,6 +19,7 @@ int _strcmp(char *strg1, char *strg2);
 char *gpath(char *name);
 void freetoken(char **ar_token);
 void free_array(char *free_arr);
+char *getpath(char *name);
 
-#endif
+#endif /*HEADER*/
 
