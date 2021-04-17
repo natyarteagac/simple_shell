@@ -7,20 +7,32 @@
 * Return: 0 if the strings are equal other number if the strings are not equal.
 */
 
-int _strcmp(char *strg1, char *strg2)
+int _strcmp(char *strg1, char *strg2, size_t number)
 {
-	while ((*strg1 != '\0' && *strg2 != '\0') && *strg1 == *strg2)
-	{
-		strg1++;
-		strg2++;
-	}
+	size_t i;
 
-	if (*strg1 == *strg2)
+	for (i = 0; i < number; i++)
 	{
-		return (0);
+		int aux1 = 0;
+		int aux2 = 0;
+
+		if (strg1[i] == strg2[i])
+		{
+			if (i == (number - 1))
+			return (0);
+		}
+		aux1 = (int)strg1[i];
+		aux2 = (int)strg2[i];
+
+		if (aux1 > aux2)
+			return (1);
+		if (aux1 < aux2)
+			return (-1);
+
 	}
-	else
-	{
-		return (*strg1 - *strg2);
-	}
+	return (0);
 }
+
+
+
+	
