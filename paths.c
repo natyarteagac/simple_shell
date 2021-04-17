@@ -18,7 +18,7 @@ char *getpath(void)
 		if (!strncmp(environ[i], "PATH=", 5))
 		{
             /*guardamos el path en una var auxiliar*/
-			path_aux = environ[i+ 5];
+			path_aux = environ[i] + 5;
 		}
 		i++;
 	}
@@ -26,3 +26,20 @@ char *getpath(void)
 	return (path_aux);
 }
 
+
+/**
+ * token_path - tokenize the path
+ * @path_aux: contains information on the path to tokenize
+ * main - Return
+ * Return: void
+ */
+
+char **token_path(char *path_aux)
+{
+	char **arraytokenpath = NULL;
+
+arraytokenpath = super_array(path_aux, ":");
+
+return (arraytokenpath);
+
+}
