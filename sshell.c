@@ -29,9 +29,9 @@ int main(void)
 			j++;
 		}
 	arraytoken = super_array(buffer, " ");
-	arraytokenpath = token_path(path_aux);
+	/*arraytokenpath = token_path(path_aux);*/
 	
-	execute(arraytoken, arraytokenpath);
+	execute(arraytoken);
 	}
 	freetoken(arraytoken);
 	freetoken(arraytokenpath);

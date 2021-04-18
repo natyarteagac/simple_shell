@@ -36,8 +36,10 @@ char *getpath(void)
 char **token_path(char *path_aux)
 {
 	char **arraytokenpath = NULL;
+	int i = 0;
 
 arraytokenpath = super_array(path_aux, ":");
+
 
 return (arraytokenpath);
 
