@@ -29,10 +29,9 @@ int main(void)
 			j++;
 		}
 	arraytoken = super_array(buffer, " ");
-	path_aux = getpath();
 	arraytokenpath = token_path(path_aux);
-	printf("%s", *arraytokenpath);
-	execute(arraytoken);
+	
+	execute(arraytoken, arraytokenpath);
 	}
 	freetoken(arraytoken);
 	freetoken(arraytokenpath);
